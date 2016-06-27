@@ -1,0 +1,27 @@
+﻿@model IList<MiracleSticks.Model.ServerEndPoint>
+
+@{
+    ViewBag.Title = "Registrations";
+}
+
+<h2>@ViewBag.UserName's Registrations: </h2>
+
+<table>
+<tr><td>Computer Name</td><td>IP</td><td>Port</td><td>Relay</td><td>Registration Time</td><td>Actions</td></tr>
+
+@foreach (var reg in Model)
+{
+    <tr>
+        <td>@reg.ComputerName</td>
+        <td>@reg.IPAddress</td> 
+        <td>@reg.Port</td>
+        <td>@if(reg.RequireRelay) 
+            { 
+                @:X 
+            }</td>
+        <td>@reg.RegistrationTime</td>         
+        <td>@Html.ActionLink("Delete", "DeleteRegistration", new { UserName = ViewBag.UserName,  regId = reg.Id } )</td>
+    </tr>
+}
+
+</table>

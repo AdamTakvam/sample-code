@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "MiracleSticks Admin";
+}
+
+<h2>User Administration</h2>
+<ul>
+    <li>@Html.ActionLink("Add User", "Register", "Account")</li>
+    <li>@Html.ActionLink("List Users", "ListUsers", "Home", null, null)</li>
+    <li>@Html.ActionLink("List Admin Users", "ListAdminUsers", "Home", null, null)</li>
+</ul>
+
+<h2>Manage Your Account</h2>
+<ul>
+    <li>@Html.ActionLink("Change Password", "ChangePassword", "Account")</li>
+</ul>

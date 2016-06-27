@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="6cd028e0-a42a-4b5c-890a-6b0e0d2c0565" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:1373/MiracleSticksAPI.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="MiracleSticksAPI2.xsd" MetadataType="Schema" ID="98220a43-99c7-437a-9f3d-e10830c6ab30" SourceId="1" SourceUrl="http://localhost:1373/MiracleSticksAPI.svc?xsd=xsd1" />
+    <MetadataFile FileName="MiracleSticksAPI.disco" MetadataType="Disco" ID="1bdd642a-a0e5-4885-b8ef-520c2131f024" SourceId="1" SourceUrl="http://localhost:1373/MiracleSticksAPI.svc?disco" />
+    <MetadataFile FileName="MiracleSticksAPI1.xsd" MetadataType="Schema" ID="e1b6f253-fcd4-40b2-b440-971575b8786d" SourceId="1" SourceUrl="http://localhost:1373/MiracleSticksAPI.svc?xsd=xsd2" />
+    <MetadataFile FileName="MiracleSticksAPI3.xsd" MetadataType="Schema" ID="208d3eee-f722-475f-9845-6cbd4d3bb9d5" SourceId="1" SourceUrl="http://localhost:1373/MiracleSticksAPI.svc?xsd=xsd0" />
+    <MetadataFile FileName="MiracleSticksAPI.wsdl" MetadataType="Wsdl" ID="b6f46f08-d432-4f7e-aa45-dccbeda2875a" SourceId="1" SourceUrl="http://localhost:1373/MiracleSticksAPI.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

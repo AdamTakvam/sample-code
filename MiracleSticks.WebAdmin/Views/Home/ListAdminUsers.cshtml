@@ -1,0 +1,23 @@
+﻿@model IList<MiracleSticks.Model.UserAccount>
+
+@{
+    ViewBag.Title = "Admin Users";
+}
+
+<h2>Admin Users:</h2>
+
+<table>
+<tr><td>Last Name</td><td>First Name</td><td>UserName</td><td>Group ID</td><td>Actions</td></tr>
+
+@foreach (var user in Model)
+{
+    <tr>
+        <td>@user.LastName</td>
+        <td>@user.FirstName</td> 
+        <td>@user.UserName</td>
+        <td>@user.GroupID</td>         
+        <td>@Html.ActionLink("List Registrations", "ListRegistrations", null, new { userName = user.UserName } ) | @Html.ActionLink("Delete", "DeleteUser", null, new { userName = user.UserName } )</td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,26 @@
+﻿<Window x:Class="MiracleSticksServer.SetupWindow"
+        Loaded="Window_Loaded"
+        Closed="WindowClosed"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Icon="./Resources/iconMiracleSticks-36x36.ico"
+        Title="Setup" Height="199" Width="362" ResizeMode="NoResize">
+    <StackPanel Orientation="Vertical">
+        <StackPanel Orientation="Horizontal">
+            <StackPanel Orientation="Vertical">
+                <Label Content="Group Id" Height="30" HorizontalAlignment="Left" Margin="12,18,0,0" Name="label1" VerticalAlignment="Center" />
+                <Label Content="Computer Name" Height="30" HorizontalAlignment="Left" Margin="12,0,0,0" Name="label2" VerticalAlignment="Center" />
+                <Label Content="Remote Password" Height="30" HorizontalAlignment="Left" Margin="12,0,0,0" Name="label3" VerticalAlignment="Center" />
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Margin="10,0,0,0">
+                <TextBox TabIndex="1" Name="groupIdTextBox" IsEnabled="False" Text="{Binding Path=GroupId}" Margin="0,18,0,0" Height="23" />
+                <TextBox TabIndex="2" Name="computerNameTextBox" Text="{Binding Path=ComputerName}" Height="23" HorizontalAlignment="Left" Margin="0,7,0,0" VerticalAlignment="Top" Width="206" />
+                <PasswordBox TabIndex="3" Height="23" HorizontalAlignment="Left" Margin="0,7,0,0" Name="passwordBox" VerticalAlignment="Top" Width="206" />
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Orientation="Vertical">
+            <Label Name="errorField" Content="You must specify a computer name and remote password" Visibility="Hidden"  Foreground="Red"  Height="28" HorizontalAlignment="Center" VerticalAlignment="Top" />
+            <Button Name="saveButton" Content="Save" IsDefault="True" TabIndex="4" Height="23" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75" Click="OnSave" />
+        </StackPanel>
+    </StackPanel>
+</Window>

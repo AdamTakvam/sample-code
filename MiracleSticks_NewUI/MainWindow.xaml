@@ -1,0 +1,165 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+	x:Class="MiracleSticks_NewUI.MainWindow"
+	x:Name="Window"
+	Title="MainWindow"
+	Width="650" Height="485"
+	ResizeMode="NoResize">
+
+	<Grid x:Name="LayoutRoot" OpacityMask="Black" Opacity="0.8" Margin="0,0,0,0" d:LayoutOverrides="HorizontalMargin" RenderTransformOrigin="0,0.5">
+		<TabControl Margin="25,25,25,25" Height="400">
+			<TabItem Header="Access" Margin="-1.333,-2,-2.667,-0.999" BorderThickness="1,1,1,0" FocusVisualStyle="{DynamicResource SimpleButtonFocusVisual}" Foreground="White">
+				<TabItem.Background>
+					<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+						<GradientStop Color="#FFF55F5F" Offset="0"/>
+						<GradientStop Color="#FF7C0404" Offset="1"/>
+					</LinearGradientBrush>
+				</TabItem.Background>
+				<Grid Background="#FFE5E5E5" Height="366.723" VerticalAlignment="Top">
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="0.154*"/>
+						<ColumnDefinition Width="0.028*"/>
+						<ColumnDefinition Width="0.293*"/>
+						<ColumnDefinition Width="0.362*"/>
+						<ColumnDefinition Width="0.163*"/>
+					</Grid.ColumnDefinitions>
+					<Image Margin="0,2.723,0,-2" Source="imgBackground.png" Stretch="Fill" Grid.ColumnSpan="5"/>
+					<Rectangle Margin="-11.281,66.223,-31.553,120.683" Stroke="#FFCCCCCC" Opacity="0.85" StrokeDashOffset="-3" StrokeLineJoin="Round" RadiusX="3" Grid.ColumnSpan="3" RadiusY="3" Grid.Column="1">
+						<Rectangle.Fill>
+							<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+								<GradientStop Color="White" Offset="0.67"/>
+								<GradientStop Color="#FFFD6C6C"/>
+								<GradientStop Color="#FFE9E9E9" Offset="0.002"/>
+							</LinearGradientBrush>
+						</Rectangle.Fill>
+						<Rectangle.Effect>
+							<DropShadowEffect/>
+						</Rectangle.Effect>
+					</Rectangle>
+					<Grid Height="96.683" Margin="-6,0,0,46" VerticalAlignment="Bottom" Grid.Column="3">
+						<Label Content="Password protect this screen" Margin="23,-15,-15,0" Height="32.683" VerticalAlignment="Top">
+							<Label.ToolTip>
+								<ToolTip>
+									<StackPanel Height="100" Width="200" Opacity="0.9">
+										<StackPanel.Background>
+											<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+												<GradientStop Color="#FFF7F2B5" Offset="0"/>
+												<GradientStop Color="#FFFBF9E5" Offset="1"/>
+											</LinearGradientBrush>
+										</StackPanel.Background>
+										<TextBlock FontWeight="Bold" Width="175"><Run Text="Password Protect This Screen"/></TextBlock>
+										<TextBlock Width="175" TextWrapping="Wrap"><Run Text="This is an example of a tooltip for providing help to the user. Copy this to all the relevant elements where help is needed. I don't know how to view this in the editor, but you'll need to style it somehow."/></TextBlock>
+									</StackPanel>
+								</ToolTip>
+							</Label.ToolTip>
+						</Label>
+						<CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="6,-10,0,0" Width="14" RenderTransformOrigin="0.357,0.23" Height="16" VerticalAlignment="Top"/>
+					</Grid>
+					<Grid Height="28.277" Margin="-35,118.763,24.447,0" VerticalAlignment="Top" Grid.ColumnSpan="3" Grid.Column="1">
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="0.071*"/>
+							<ColumnDefinition Width="0.365*"/>
+							<ColumnDefinition Width="0.564*"/>
+						</Grid.ColumnDefinitions>
+						<Label Content="Computer Name:" Margin="37,-27.723,-10.803,0" FontSize="14.667" Height="28" VerticalAlignment="Top" Grid.Column="1"/>
+						<TextBox TextWrapping="Wrap" Text="TextBox" Margin="16.58,-27,-26.224,0" Height="28.277" VerticalAlignment="Top" Grid.Column="2"/>
+					</Grid>
+					<Grid Margin="-6.218,159.04,24.447,179.683" Grid.ColumnSpan="2" Grid.Column="2">
+						<Label Content="Password:" FontSize="14.667" Margin="20,-27,227.553,0" Height="28" VerticalAlignment="Top"/>
+						<PasswordBox Margin="149.832,-27,-26.196,0" PasswordChar="*" Width="240" Height="26.65" VerticalAlignment="Top"/>
+					</Grid>
+					<Button Content="Connect" Margin="-27.399,169.04,59,166.98" FontSize="14.667" Foreground="White" Grid.Column="3" d:LayoutOverrides="HorizontalAlignment">
+						<Button.Background>
+							<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+								<GradientStop Color="#FFBCFD88" Offset="0"/>
+								<GradientStop Color="#FF0B8D25" Offset="0.9"/>
+							</LinearGradientBrush>
+						</Button.Background>
+					</Button>
+					<Image Height="18" Margin="5.218,96.223,-6.894,0" Source="imgQuestion.png" Stretch="Fill" VerticalAlignment="Top" Grid.Column="1"/>
+					<Image Height="18" Margin="5.218,136.223,-6.894,0" Source="imgQuestion.png" Stretch="Fill" VerticalAlignment="Top" Grid.Column="1"/>
+					<Image Margin="0,0,7.925,137.5" Source="imgQuestion.png" Stretch="Fill" Grid.Column="2" HorizontalAlignment="Right" Width="18" Height="18" VerticalAlignment="Bottom"/>
+				</Grid>
+			</TabItem>
+			<TabItem Header="Options" Margin="2.002,-2,-6.004,-1" BorderThickness="1,1,1,0" Foreground="White">
+								<TabItem.Background>
+					<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+						<GradientStop Color="#FFF55F5F" Offset="0"/>
+						<GradientStop Color="#FF7C0404" Offset="1"/>
+					</LinearGradientBrush>
+				</TabItem.Background>
+				<Grid Background="#FFE5E5E5" Height="362.04" Width="566">
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="0.036*"/>
+						<ColumnDefinition Width="0.964*"/>
+					</Grid.ColumnDefinitions>
+					<Image Margin="-8.667,-0.61,-8.333,-3.35" Source="imgBackground.png" Stretch="Fill" Grid.ColumnSpan="2"/>
+					<Label Content="Graphics:" HorizontalAlignment="Left" Height="28" Margin="7.5,14,0,0" VerticalAlignment="Top" Width="122" FontSize="14.667" FontWeight="Bold" Grid.Column="1"/>
+					<Label Content="Hide Desktop Wallpaper" Height="28" Margin="65.5,41,0,0" VerticalAlignment="Top" FontSize="14.667" Grid.Column="1" HorizontalAlignment="Left" Width="200"/>
+					<CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="19" Margin="46.5,49,0,0" VerticalAlignment="Top" Width="15" Grid.Column="1"/>
+					<CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="16" Margin="46.5,85,0,0" VerticalAlignment="Top" Width="15" Grid.Column="1"/>
+					<Label Content="Grab Transparent Windows" Height="28" Margin="65.5,77,0,0" VerticalAlignment="Top" FontSize="14.667" Grid.Column="1" HorizontalAlignment="Left" Width="200"/>
+					<Label Content="When Last Client Disconnects:" HorizontalAlignment="Left" Margin="7.5,165.54,0,168.5" Width="221" FontSize="14.667" FontWeight="Bold" Grid.Column="1"/>
+					<RadioButton Content="RadioButton" GroupName="disco" HorizontalAlignment="Left" Height="15" Margin="46.5,0,0,146.5" VerticalAlignment="Bottom" Width="15" Grid.Column="1"/>
+					<RadioButton Content="RadioButton" GroupName="disco" IsChecked="True" HorizontalAlignment="Left" Height="15" Margin="46.5,0,0,115.5" VerticalAlignment="Bottom" Width="15" Grid.Column="1"/>
+					<RadioButton Content="RadioButton" GroupName="disco" HorizontalAlignment="Left" Height="15" Margin="46.5,0,0,83.5" VerticalAlignment="Bottom" Width="15" Grid.Column="1"/>
+					<Label Content="Chill" HorizontalAlignment="Left" Height="28" Margin="65.5,0,0,140.5" VerticalAlignment="Bottom" Width="163" FontSize="14.667" Grid.Column="1"/>
+					<Label Content="Freak Out" HorizontalAlignment="Left" Height="28" Margin="65.5,0,0,109.5" VerticalAlignment="Bottom" Width="163" FontSize="14.667" Grid.Column="1"/>
+					<Label Content="Blue Screen of Death" HorizontalAlignment="Left" Height="28" Margin="65.5,0,0,76.5" VerticalAlignment="Bottom" Width="163" FontSize="14.667" Grid.Column="1"/>
+					<Label Content="Screen Polling Interval:" HorizontalAlignment="Left" Height="28" Margin="67.5,109,0,0" VerticalAlignment="Top" Width="174" FontSize="14.667" Grid.Column="1"/>
+					<TextBox Height="28" Margin="238.5,109,255,0" TextWrapping="Wrap" Text="50" VerticalAlignment="Top" Grid.Column="1"/>
+					<Label Content="ms" HorizontalAlignment="Right" Height="28" Margin="0,109,212,0" VerticalAlignment="Top" Width="38" Grid.Column="1"/>
+					<Path Data="M11,137.54 L558,137.54" Fill="#FFFFFFE0" Height="1" Margin="-9.5,150.54,7,0" Stretch="Fill" Stroke="DarkGray" VerticalAlignment="Top" Grid.Column="1"/>
+					<Image Margin="13.624,0,0,144.817" Source="imgQuestion.png" Stretch="Fill" Height="18" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="18" Grid.Column="1"/>
+					<Image Margin="13.624,0,0,114.817" Source="imgQuestion.png" Stretch="Fill" Height="18" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="18" Grid.Column="1"/>
+					<Image Margin="13.624,0,0,81.817" Source="imgQuestion.png" Stretch="Fill" Height="18" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="18" Grid.Column="1"/>
+					<Image Margin="13.624,47.223,0,0" Source="imgQuestion.png" Stretch="Fill" HorizontalAlignment="Left" Width="18" Height="18" VerticalAlignment="Top" Grid.Column="1"/>
+					<Image Margin="13.624,81.223,0,0" Source="imgQuestion.png" Stretch="Fill" HorizontalAlignment="Left" Width="18" Height="18" VerticalAlignment="Top" Grid.Column="1"/>
+					<Image Margin="41.624,114.223,0,0" Source="imgQuestion.png" Stretch="Fill" HorizontalAlignment="Left" Width="18" Grid.Column="1" Height="18" VerticalAlignment="Top"/>
+				</Grid>
+			</TabItem>
+			<TabItem Header="Status" Margin="4.674,-1.666,-8.67,-1.332" BorderThickness="1,1,1,0" Foreground="White">
+								<TabItem.Background>
+					<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+						<GradientStop Color="#FFF55F5F" Offset="0"/>
+						<GradientStop Color="#FF7C0404" Offset="1"/>
+					</LinearGradientBrush>
+				</TabItem.Background>
+				<Grid Background="#FFE5E5E5">
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="0.027*"/>
+						<ColumnDefinition Width="0.031*"/>
+						<ColumnDefinition Width="0.071*"/>
+						<ColumnDefinition Width="0.871*"/>
+					</Grid.ColumnDefinitions>
+					<Image Margin="0,2.723,0,0" Source="imgBackground.png" Stretch="Fill" Grid.ColumnSpan="4"/>
+					<Label Content="MiracleSticks is:" HorizontalAlignment="Left" Height="28" Margin="75.555,92.04,0,0" VerticalAlignment="Top" Width="120" FontSize="14.667" Grid.Column="3"/>
+					<Label Content="Address:" HorizontalAlignment="Left" Margin="75.555,134.04,0,0" Width="92" FontSize="14.667" Grid.Column="3" Height="30" VerticalAlignment="Top">
+						<Label.ToolTip>
+					        <ToolTip>
+					            <StackPanel>
+					                <TextBlock FontWeight="Bold"><Run Text="External IP and port"/></TextBlock>
+					                <TextBlock><Run Text="The local port is always going to be 5900. What's important is the IP of your router and the port which forwards to this server. Please don't use this literal text :/"/></TextBlock>
+					            </StackPanel>
+					        </ToolTip>
+					    </Label.ToolTip>
+					</Label>
+					<Label Content="Smokin' in the boy's room" Height="28" Margin="210.555,92.04,30,0" VerticalAlignment="Top" Foreground="Green" FontSize="14.667" Grid.Column="3"/>
+					<Label Content="207.158.23.45:5901" Margin="210.555,134.04,30,0" Foreground="Green" FontSize="14.667" Grid.Column="3" Height="30" VerticalAlignment="Top"/>
+					<Button Content="Kill" VerticalAlignment="Bottom" Margin="126.555,0,202,152.018" FontSize="14.667" Foreground="White" Height="30.703" Grid.Column="3">
+						<Button.Background>
+							<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+								<GradientStop Color="#FFFD88A3" Offset="0"/>
+								<GradientStop Color="#FFCA002E" Offset="0.9"/>
+							</LinearGradientBrush>
+						</Button.Background>
+					</Button>
+					<Image Grid.Column="3" Height="18" Margin="51.793,97.223,0,0" Source="imgQuestion.png" Stretch="Fill" VerticalAlignment="Top" HorizontalAlignment="Left" Width="18"/>
+					<Image Grid.Column="3" Height="18" Margin="51.793,139.223,0,0" Source="imgQuestion.png" Stretch="Fill" VerticalAlignment="Top" HorizontalAlignment="Left" Width="18"/>
+				</Grid>
+			</TabItem>
+		</TabControl>
+	</Grid>
+</Window>

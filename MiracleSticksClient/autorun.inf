@@ -1,0 +1,6 @@
+[autorun]
+icon=miraclesticksclient.exe
+label=Miracle Sticks Client
+open=Launcher.wsf
+shell=Launcher.wsf
+action=Run Miracle Sticks Client
